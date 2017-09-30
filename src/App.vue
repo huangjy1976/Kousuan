@@ -1,7 +1,7 @@
 <template>
   <main>
     <div style="margin-bottom:20px;" class="header">
-      <a href="#" class="active" @click="setMax(10, 1, 10, 2, $event)">10以内</a> &nbsp; &nbsp; <a href="#" @click="setMax(20, 10, 10, 2, $event)">20以内（第二个数10以内）</a> &nbsp; &nbsp; <a href="#" @click="setMax(20, 10, 20, 2, $event)">20以内</a> &nbsp; &nbsp; <a href="#" @click="setMax(20, 1, 20, 3, $event)">20以内（3个数）</a> &nbsp; &nbsp; <a href="#" @click="setMax(100, 20, 100, 2, $event)">100以内</a> &nbsp; &nbsp; 
+      <a href="#" class="active" @click="setMax(10, 1, 10, 2, $event)">10以内</a> &nbsp; &nbsp; <a href="#" @click="setMax(20, 10, 10, 2, $event)">20以内（第二个数10以内）</a> &nbsp; &nbsp; <a href="#" @click="setMax(20, 10, 20, 2, $event)">20以内</a> &nbsp; &nbsp; <a href="#" @click="setMax(20, 1, 20, 3, $event)">20以内（3个数）</a> &nbsp; &nbsp; <a href="#" @click="setMax(100, 20, 10, 1, $event)">100以内(第二数10以内)</a> &nbsp; &nbsp; <a href="#" @click="setMax(100, 20, 100, 2, $event)">100以内</a> &nbsp; &nbsp; 
        生成 <input type="text" v-model="numbers" @keyup.enter="generate()" style="width: 30px;"> 道题  &nbsp; &nbsp; <input type="button" value="生成" @click="generate()" style="width: 50px; height: 30px; padding: 2px;"> &nbsp; &nbsp; <a href="#" @click="hideHeader">隐藏该区域（方便打印使用）</a>
     </div>
     <div style="height: 200px;">
